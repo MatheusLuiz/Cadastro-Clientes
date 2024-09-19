@@ -1,0 +1,151 @@
+@import url('global.css');
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: var(--shape-transparency); 
+}
+
+.modal-content {
+    background-color: var(--background-color);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid var(--text-color-secondary); 
+    width: 80%; 
+    max-width: 600px;
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+.close {
+    color: var(--text-color-secondary); 
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--text-color-primary); 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#openModalBtn {
+    padding: 10px 20px;
+    font-size: var(--text-md); 
+    color: var(--background-color);
+    background-color: var(--brand-color); 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#openModalBtn:hover {
+    background-color: darken(var(--brand-color), 10%); 
+}
+
+.modal-section {
+    display: block; 
+    padding: 20px;
+}
+
+.modal-section h2 {
+    margin-top: 0;
+    font-size: var(--text-lg); 
+    color: var(--text-color-primary); 
+}
+
+.form-group {
+    margin-bottom: 20px; /* Aumenta o espaço entre os grupos */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: var(--text-md); 
+    color: var(--text-color-primary); 
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px; /* Aumenta o padding para mais conforto */
+    border: 1px solid var(--skeleton-color); 
+    border-radius: 4px;
+    font-size: var(--text-md); /* Adiciona tamanho de fonte */
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: var(--brand-color); 
+    color: var(--background-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--text-md); 
+    margin-top: 10px; /* Espaço entre o input e o botão */
+}
+
+.form-group button:hover {
+    background-color: darken(var(--brand-color), 10%); 
+}
+
+.buttons-container {
+    display: flex; /* Flexbox para os botões */
+    justify-content: space-between; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço acima dos botões */
+}
+
+button {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    border: 1px solid #000; 
+    background-color: #0056b3; 
+}
+
+button#cancelarCadastro,
+button#voltarParaCliente {
+    background-color: #dc3545; 
+}
+
+button#cancelarCadastro:hover,
+button#voltarParaCliente:hover {
+    border: 1px solid #000; 
+    background-color: #c82333; 
+}
+
+button#avancarParaEndereco {
+    background-color: #28a745; 
+}
+
+button#avancarParaEndereco:hover {
+    border: 1px solid #000; 
+    background-color: #218838; 
+}
+
+button[type="submit"] {
+    background-color: #007bff; 
+}
+
+button[type="submit"]:hover {
+    border: 1px solid #000; 
+    background-color: #0056b3;
+}
